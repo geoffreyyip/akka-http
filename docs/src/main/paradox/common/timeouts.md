@@ -63,6 +63,8 @@ If the network level buffers (including the Akka Stream / Akka IO networking sta
 contains more data than can be transferred to the client in the given time when the server-side considers
 to be finished with this connection, the client may encounter a connection reset.
 
+It can be configured using the `akka.http.server.linger-timeout` setting.
+
 Set to `infinite` to disable automatic connection closure (which will risk to leak connections).
 
 ## Client timeouts
